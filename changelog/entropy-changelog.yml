@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.npmjs.org/@entropyxyz/sdk + https://registry.npmjs.org/@entropyxyz/cli
+scheme: semver
+note: >-
+  Entropy publishes no single dated product changelog page; version history is
+  tracked per package in the npm registry and per Rust crate on crates.io. The
+  entries below are the recent published releases of the two marquee JS packages
+  (@entropyxyz/sdk and @entropyxyz/cli), from npm publish timestamps. Highlights
+  are not annotated by the provider beyond version numbers, so no breaking/added
+  claims are asserted here.
+packages:
+  - name: "@entropyxyz/sdk"
+    current: 0.4.1
+    entries:
+      - version: 0.4.1
+        date: '2025-01-09'
+      - version: 0.4.1-2
+        date: '2025-01-07'
+      - version: 0.4.1-1
+        date: '2024-12-19'
+      - version: 0.4.1-0
+        date: '2024-12-02'
+      - version: 0.4.0
+        date: '2024-11-06'
+      - version: 0.3.0
+        date: '2024-10-23'
+  - name: "@entropyxyz/cli"
+    current: 0.1.1
+    entries:
+      - version: 0.1.1
+        date: '2024-11-06'
+      - version: 0.1.0
+        date: '2024-11-06'
+      - version: 0.0.4-3
+        date: '2024-11-04'
+      - version: 0.0.4-2
+        date: '2024-11-04'
+      - version: 0.0.4-1
+        date: '2024-10-24'
+      - version: 0.0.3
+        date: '2024-07-17'

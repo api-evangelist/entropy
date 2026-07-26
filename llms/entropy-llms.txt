@@ -1,0 +1,25 @@
+# Entropy
+
+> Entropy is a threshold-signature network for trustless, programmable key management and distributed key generation (DKG) — "the Autonomous Agent Network." Users and agents generate cryptographic signatures without any single party ever holding the private key, gated by on-chain WASM "programs" that define exactly when a signature may be produced. Built as a Substrate-based blockchain with Threshold Signature Scheme (TSS) servers running in Trusted Execution Environments (TEEs). Backed by a16z.
+
+## Docs
+- [Developer Documentation](https://docs.entropy.xyz/): Basics, Concepts, Guides, and Reference for building on Entropy.
+- [CLI Reference](https://docs.entropy.xyz/reference/command-line-interface/): install, configure, programmatic CLI, and the text-based UI.
+
+## Packages / SDKs
+- [@entropyxyz/sdk](https://www.npmjs.com/package/@entropyxyz/sdk): JS SDK for the Entropy blockchain (v0.4.1, AGPL-3.0).
+- [@entropyxyz/cli](https://www.npmjs.com/package/@entropyxyz/cli): `entropy` CLI and TUI for the Entropy protocol (v0.1.1).
+- [entropy-tss](https://crates.io/crates/entropy-tss): Entropy Threshold Signature Scheme server (Rust).
+- [synedrion](https://github.com/entropyxyz/synedrion): CGGMP21 threshold signing scheme (Rust).
+
+## Source
+- [GitHub Organization](https://github.com/entropyxyz): entropy-core, sdk, cli, synedrion, crypto-primes, manul, programs.
+- [On-chain Programs](https://github.com/entropyxyz/programs): deployable WASM programs that gate signing.
+
+## Community
+- [Blog (Mirror)](https://mirror.xyz/entropy.eth/S6SPBBZubtuyH8GGgoS8qGS837MdoBnDv6FfHK-Y9_k)
+- [Discord](https://discord.com/invite/9JUQwHBhVz)
+- [Community repo](https://github.com/entropyxyz/community): public discussions and support.
+
+## Security
+- [security.txt](https://entropy.xyz/.well-known/security.txt): PGP-signed RFC 9116, contact security@entropy.xyz.

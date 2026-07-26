@@ -1,0 +1,22 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# Please contact us via this email address to report security issues.
+Contact: mailto:security@entropy.xyz
+
+# Please do not consider the information in this file valid after this date.
+Expires: 2027-09-01T04:00:00.000Z
+
+# Please use English to communicate with us.
+Preferred-Languages: en
+
+# Please consider this information valid only if received over a secure
+# connection from the following Web adress.
+Canonical: https://entropy.xyz/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQR7Lrc6QLhndYZAqi5ef+N1MyfpAQUCZuSNsgAKCRBef+N1Myfp
+AdufAQCDKIWdF/pFiGocdK8Oy9PbBFKiNp79aDZtCxUp6gLrxQEA0zY0BMJwqVKn
+SdFhgtKxoPqfgw0heLlnEMVSg09ZXwM=
+=M1Yh
+-----END PGP SIGNATURE-----

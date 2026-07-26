@@ -1,7 +1,29 @@
 aid: entropy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/entropy.png
 name: Entropy
-description: Entropy is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Entropy is a threshold-signature network for trustless, programmable key
+  management and distributed key generation (DKG). Positioned as "the Autonomous
+  Agent Network," Entropy lets users and agents produce cryptographic signatures
+  without any single party ever holding the private key, using on-chain WASM
+  "programs" that define the exact conditions under which a signature may be
+  generated. Built as a Substrate-based blockchain with a network of Threshold
+  Signature Scheme (TSS) servers running inside Trusted Execution Environments
+  (TEEs), Entropy delivers secure crypto custody, programmable signing, and
+  distributed key management for Web3 and autonomous-agent use cases. Backed by
+  a16z and surfaced into the API Evangelist network via the venture-portfolio
+  pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/entropy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,60 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Cryptography
+- Threshold Signatures
+- Distributed Key Generation
+- Key Management
+- Blockchain
+- Web3
+- Custody
+- Signing
+- Autonomous Agents
+- TEE
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/entropy-vulnerability-disclosure.yml
+- type: Security
+  url: security/entropy-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/entropy-domain-security.yml
+- type: Website
+  url: https://entropy.xyz
+- type: DeveloperPortal
+  url: https://docs.entropy.xyz/
+- type: Documentation
+  url: https://docs.entropy.xyz/
+- type: GitHubOrganization
+  url: https://github.com/entropyxyz
+- type: Blog
+  url: https://mirror.xyz/entropy.eth/S6SPBBZubtuyH8GGgoS8qGS837MdoBnDv6FfHK-Y9_k
+- type: Support
+  url: https://discord.com/invite/9JUQwHBhVz
+- type: Packages
+  url: packages/entropy-packages.yml
+- type: SDKs
+  url: packages/entropy-packages.yml
+- type: CLI
+  url: cli/entropy-cli.yml
+- type: ChangeLog
+  url: changelog/entropy-changelog.yml
+- type: LLMsTxt
+  url: llms/entropy-llms.txt
+- type: WellKnown
+  url: well-known/entropy-well-known.yml
+- type: SecurityTxt
+  url: well-known/entropy-security.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

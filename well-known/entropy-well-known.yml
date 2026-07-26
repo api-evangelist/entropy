@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: https://entropy.xyz/.well-known/
+hosts:
+  - host: https://entropy.xyz
+    documents:
+      - path: /.well-known/security.txt          # RFC 9116 (PGP-signed)
+        status: 200
+        file: entropy-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://docs.entropy.xyz
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+notes: >-
+  Entropy publishes a PGP-signed RFC 9116 security.txt at the apex host with a
+  security@entropy.xyz contact and an Expires of 2027-09-01. No OIDC / OAuth
+  authorization-server metadata, api-catalog, or ai-plugin manifest is served
+  (Entropy is a Substrate-based threshold-signature chain, not an OAuth/OIDC
+  REST API), so those discovery documents are legitimately absent (404).

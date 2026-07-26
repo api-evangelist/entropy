@@ -1,0 +1,114 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=entropyxyz + https://github.com/entropyxyz
+packages:
+  - language: javascript
+    registry: npm
+    name: "@entropyxyz/sdk"
+    url: https://www.npmjs.com/package/@entropyxyz/sdk
+    install: npm install @entropyxyz/sdk
+    version: 0.4.1
+    license: AGPL-3.0-only
+    repository: https://github.com/entropyxyz/sdk
+    description: JS SDK for the Entropy blockchain
+    official: true
+    kind: sdk
+  - language: javascript
+    registry: npm
+    name: "@entropyxyz/cli"
+    url: https://www.npmjs.com/package/@entropyxyz/cli
+    install: npm install --global @entropyxyz/cli
+    version: 0.1.1
+    license: AGPL-3.0-only
+    repository: https://github.com/entropyxyz/cli
+    description: CLI and TUI for interacting with the Entropy protocol (binary "entropy")
+    official: true
+    kind: cli
+  - language: javascript
+    registry: npm
+    name: "@entropyxyz/entropy-protocol-nodejs"
+    url: https://www.npmjs.com/package/@entropyxyz/entropy-protocol-nodejs
+    install: npm install @entropyxyz/entropy-protocol-nodejs
+    version: 0.2.0
+    repository: https://github.com/entropyxyz/entropy-core
+    description: Entropy signing and DKG protocol execution and transport logic (Node.js WASM)
+    official: true
+    kind: library
+  - language: javascript
+    registry: npm
+    name: "@entropyxyz/entropy-protocol-web"
+    url: https://www.npmjs.com/package/@entropyxyz/entropy-protocol-web
+    install: npm install @entropyxyz/entropy-protocol-web
+    version: 0.2.0
+    repository: https://github.com/entropyxyz/entropy-core
+    description: Entropy signing and DKG protocol execution and transport logic (browser WASM)
+    official: true
+    kind: library
+  - language: javascript
+    registry: npm
+    name: "@entropyxyz/x25519-chacha20poly1305-nodejs"
+    url: https://www.npmjs.com/package/@entropyxyz/x25519-chacha20poly1305-nodejs
+    install: npm install @entropyxyz/x25519-chacha20poly1305-nodejs
+    version: 0.2.0
+    repository: https://github.com/entropyxyz/x25519-chacha20poly1305
+    description: x25519 key exchange and chacha20poly1305 encryption (Node.js WASM bindings)
+    official: true
+    kind: library
+  - language: javascript
+    registry: npm
+    name: "@entropyxyz/x25519-chacha20poly1305-web"
+    url: https://www.npmjs.com/package/@entropyxyz/x25519-chacha20poly1305-web
+    install: npm install @entropyxyz/x25519-chacha20poly1305-web
+    version: 0.2.0
+    repository: https://github.com/entropyxyz/x25519-chacha20poly1305
+    description: x25519 key exchange and chacha20poly1305 encryption (browser WASM bindings)
+    official: true
+    kind: library
+  - language: rust
+    registry: crates.io
+    name: entropy-tss
+    url: https://crates.io/crates/entropy-tss
+    install: cargo add entropy-tss
+    version: 0.4.0
+    repository: https://github.com/entropyxyz/entropy-core
+    description: Entropy Threshold Signature Scheme (TSS) server
+    official: true
+    kind: library
+  - language: rust
+    registry: crates.io
+    name: entropy-shared
+    url: https://crates.io/crates/entropy-shared
+    install: cargo add entropy-shared
+    version: 0.4.0
+    repository: https://github.com/entropyxyz/entropy-core
+    description: Shared types used by the Entropy chain node and Entropy Threshold Signing Server
+    official: true
+    kind: library
+  - language: rust
+    registry: github
+    name: synedrion
+    url: https://github.com/entropyxyz/synedrion
+    description: Rust implementation of the CGGMP21 threshold signing scheme
+    official: true
+    kind: library
+  - language: rust
+    registry: github
+    name: crypto-primes
+    url: https://github.com/entropyxyz/crypto-primes
+    description: Random prime generation and primality testing library based on crypto-bigint
+    official: true
+    kind: library
+  - language: rust
+    registry: github
+    name: manul
+    url: https://github.com/entropyxyz/manul
+    description: Round-based distributed protocols framework
+    official: true
+    kind: library
+notes: >-
+  All packages are first-party (published under the @entropyxyz npm scope or the
+  entropyxyz GitHub org). @entropyxyz/sdk is the marquee JS SDK; @entropyxyz/cli
+  ships the `entropy` binary (also catalogued in cli/). npm versions and licenses
+  verified against the npm registry; entropy-tss / entropy-shared verified on
+  crates.io. synedrion / crypto-primes / manul are the Rust cryptography libraries
+  (repository-verified) that also publish to crates.io.

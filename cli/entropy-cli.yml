@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.entropy.xyz/reference/command-line-interface/
+cli:
+  name: entropy
+  package: "@entropyxyz/cli"
+  version: 0.1.1
+  license: AGPL-3.0-only
+  repository: https://github.com/entropyxyz/cli
+  docs: https://docs.entropy.xyz/reference/command-line-interface/
+  requirements:
+    - Node.js >= 20
+  install:
+    - method: npm
+      command: npm install --global @entropyxyz/cli
+    - method: npx
+      command: npx @entropyxyz/cli
+commands:
+  - name: list
+    aliases: [ls]
+    description: "List all accounts. Output is JSON of form [{ name, address, data }]."
+  - name: balance
+    description: Retrieve the balance for an Entropy account.
+  - name: transfer
+    description: Transfer funds between two Entropy accounts.
+  - name: sign
+    description: Sign a message using the Entropy network.
+  - name: tui
+    description: >-
+      Launch the interactive text-based UI with menu options: Manage Accounts,
+      Balance, Register, Sign, Transfer, Deploy Program, User Programs, Exit.
+tui_menu:
+  - Manage Accounts
+  - Balance
+  - Register
+  - Sign
+  - Transfer
+  - Deploy Program
+  - User Programs
+  - Exit
+notes: >-
+  The `entropy` CLI (and its bundled TUI) is the primary first-party developer
+  entry point to the Entropy protocol — account management, balances, transfers,
+  threshold signing, and deploying/using on-chain programs. Both a scriptable
+  command surface and an interactive TUI are shipped in the single npm package.
