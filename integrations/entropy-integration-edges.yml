@@ -1,0 +1,133 @@
+edges:
+- partner_name: crates.io
+  partner: crates-io
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Rust)
+  evidence: https://crates.io/crates/entropy-shared
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: crates.io (public registry JSON)
+    spec_file: null
+    language: Rust
+    packages:
+    - name: entropy-shared
+      version: 0.4.0
+      released: '2025-07-31'
+      released_field: updated_at
+      lapsed: false
+      page: https://crates.io/crates/entropy-shared
+      repo_leg: domain:entropy.xyz
+      publisher_leg: org:entropyxyz
+      matched_by: domain
+    - name: entropy-tss
+      version: 0.4.0
+      released: '2025-07-31'
+      released_field: updated_at
+      lapsed: false
+      page: https://crates.io/crates/entropy-tss
+      repo_leg: domain:entropy.xyz
+      publisher_leg: org:entropyxyz
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@entropyxyz/cli
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@entropyxyz/cli'
+      version: 0.1.1
+      released: '2024-11-06'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@entropyxyz/cli
+      repo_leg: github-org:entropyxyz
+      publisher_leg: email:entropy.xyz
+      matched_by: domain
+    - name: '@entropyxyz/entropy-protocol-nodejs'
+      version: 0.2.0
+      released: '2024-10-24'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@entropyxyz/entropy-protocol-nodejs
+      repo_leg: domain:entropy.xyz
+      publisher_leg: email:entropy.xyz
+      matched_by: domain
+    - name: '@entropyxyz/entropy-protocol-web'
+      version: 0.2.0
+      released: '2024-10-24'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@entropyxyz/entropy-protocol-web
+      repo_leg: domain:entropy.xyz
+      publisher_leg: email:entropy.xyz
+      matched_by: domain
+    - name: '@entropyxyz/sdk'
+      version: 0.4.1
+      released: '2025-01-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@entropyxyz/sdk
+      repo_leg: github-org:entropyxyz
+      publisher_leg: email:entropy.xyz
+      matched_by: domain
+    - name: '@entropyxyz/x25519-chacha20poly1305-nodejs'
+      version: 0.2.0
+      released: '2024-10-24'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@entropyxyz/x25519-chacha20poly1305-nodejs
+      repo_leg: github-org:entropyxyz
+      publisher_leg: email:entropy.xyz
+      matched_by: domain
+    - name: '@entropyxyz/x25519-chacha20poly1305-web'
+      version: 0.2.0
+      released: '2024-10-24'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@entropyxyz/x25519-chacha20poly1305-web
+      repo_leg: github-org:entropyxyz
+      publisher_leg: email:entropy.xyz
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
